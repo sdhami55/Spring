@@ -1,0 +1,18 @@
+package org.example.spring.service;
+
+import org.example.spring.model.Employee;
+
+public class EmployeeService implements ServiceInterface{
+	
+	Employee employee=new Employee();
+
+	@Override
+	public void getDetails() {
+		System.out.println("Id : "+ employee.getId());
+		System.out.println("name : "+ employee.getName());
+		System.out.println("salary : "+ employee.getSalary());
+		System.out.println("dept : "+ employee.getDept());
+		
+	}
+
+}

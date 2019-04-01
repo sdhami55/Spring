@@ -1,0 +1,58 @@
+package org.spring.sampleproject.service;
+
+import org.spring.sampleproject.entity.Account;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+
+@Component
+public class AccountServiceImpl implements AccountService {
+	
+	@Autowired
+	private Account account;
+	
+	
+	public AccountServiceImpl() {
+		super();
+	}
+
+	public AccountServiceImpl(Account account) {
+		super();
+		this.account = account;
+	}
+
+	
+	
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	
+	
+	
+
+	@Override
+	public double balanceEnquiry() {
+		
+		return account.getBalance();
+	}
+
+	@Override
+	public void displayDetails() {
+		
+		System.out.println("AccountId : "+ account.getAccountID());
+		System.out.println("AccountHolderName : "+ account.getAccountHolderName());
+		System.out.println("Balane : "+ account.getBalance());
+		System.out.println("Address : "+ account.getAcctHolderAddress());
+	}
+	
+	
+	
+
+}

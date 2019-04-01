@@ -1,0 +1,20 @@
+package org.spring.sampleproject;
+
+import org.spring.sampleproject.config.BeanConfiguration;
+import org.spring.sampleproject.service.AccountService;
+import org.spring.sampleproject.service.AccountServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Client {
+	
+	public static void main(String args[])
+	{
+		ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfiguration.class);
+		
+		AccountService accountService = (AccountServiceImpl)context.getBean("accountServiceImpl");
+		
+		accountService.displayDetails();
+	}
+
+}

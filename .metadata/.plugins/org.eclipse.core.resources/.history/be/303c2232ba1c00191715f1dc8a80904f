@@ -1,0 +1,12 @@
+package org.spring.sampleproject.entity;
+
+public class Account 
+{
+	
+	private String accountID;
+	private String accountHolderName;
+	private double balance;
+	private String	acctHolderAddress;
+
+
+}

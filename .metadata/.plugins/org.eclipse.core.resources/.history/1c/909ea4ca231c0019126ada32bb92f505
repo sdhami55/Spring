@@ -1,0 +1,47 @@
+package org.training.spring;
+
+public class PeramanentEmployee extends Employee {
+	
+	private String employeeType;
+
+	public PeramanentEmployee() {
+		super();
+		
+	}
+
+	public PeramanentEmployee(int id, String name, double salary, String employeeType) {
+		super(id, name, salary, employeeType);
+		
+	}
+
+	public PeramanentEmployee(String employeeType) {
+		super();
+		this.employeeType = employeeType;
+	}
+
+	public String getEmployeeType() {
+		return employeeType;
+	}
+
+	public void setEmployeeType(String employeeType) {
+		this.employeeType = employeeType;
+	}
+	
+	public void employeeDetails()
+	{
+		System.out.println("Id : "+getId());
+		System.out.println("name : "+getName());
+		System.out.println("salary : "+getSalary());
+		System.out.println("employeeType : "+getEmployeeType());
+	}
+
+	@Override
+	public String toString() {
+		return "PeramanentEmployee [employeeType=" + employeeType + "]";
+	}
+	
+	
+	
+	
+
+}

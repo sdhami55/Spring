@@ -1,0 +1,7 @@
+package org.spring.sampleproject.config;
+
+
+@Configuration
+public class Configuration {
+
+}

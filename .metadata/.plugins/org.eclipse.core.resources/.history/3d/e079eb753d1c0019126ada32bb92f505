@@ -1,0 +1,20 @@
+package org.example.spring;
+
+import org.example.spring.service.EmployeeService;
+import org.example.spring.service.Service;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Client {
+	
+	ApplicationContext context =new ClassPathXmlApplicationContext("beans.xml");
+	
+	EmployeeService service= (EmployeeService)context.getBean("employeeService");
+	
+	service.getDetails();
+	
+
+	
+	
+
+}

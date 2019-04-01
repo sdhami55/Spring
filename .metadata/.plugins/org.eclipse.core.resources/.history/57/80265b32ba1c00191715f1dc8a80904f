@@ -1,0 +1,77 @@
+package org.spring.sampleproject.entity;
+
+public class Address {
+	
+	private String HNo;
+	private String	Street;
+	private String	Area;
+	private String	City;
+	private String	ZipCode;
+	public Address() {
+		super();
+	
+	}
+	
+	public Address(String hNo, String street, String area, String city, String zipCode) {
+		super();
+		HNo = hNo;
+		Street = street;
+		Area = area;
+		City = city;
+		ZipCode = zipCode;
+	}
+
+	public String getHNo() {
+		return HNo;
+	}
+
+	public void setHNo(String hNo) {
+		HNo = hNo;
+	}
+
+	public String getStreet() {
+		return Street;
+	}
+
+	public void setStreet(String street) {
+		Street = street;
+	}
+
+	public String getArea() {
+		return Area;
+	}
+
+	public void setArea(String area) {
+		Area = area;
+	}
+
+	public String getCity() {
+		return City;
+	}
+
+	public void setCity(String city) {
+		City = city;
+	}
+
+	public String getZipCode() {
+		return ZipCode;
+	}
+
+	public void setZipCode(String zipCode) {
+		ZipCode = zipCode;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [HNo=" + HNo + ", Street=" + Street + ", Area=" + Area + ", City=" + City + ", ZipCode="
+				+ ZipCode + "]";
+	}
+	
+	
+	
+	
+	
+	
+
+
+}

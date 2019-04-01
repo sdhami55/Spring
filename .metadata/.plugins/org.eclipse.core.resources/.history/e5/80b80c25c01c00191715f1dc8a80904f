@@ -1,0 +1,11 @@
+package org.spring.sampleproject.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public interface AccountService {
+	
+	public double balanceEnquiry();
+	public void displayDetails();
+
+}
